@@ -2,6 +2,8 @@ from uuid import uuid4
 from flask import Flask, request, session
 from flask.templating import render_template
 from centeridentity.api import CenterIdentity
+
+
 app = Flask(__name__)
 
 ci = CenterIdentity('YOUR_CENTER_IDENTITY_API_KEY', 'YOUR_CENTER_IDENTITY_USERNAME')
